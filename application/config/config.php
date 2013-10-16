@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url']	= 'https://sietpol.unes.edu.ve';//
-$config['base_url']	= 'http://192.168.1.157/sac_coorpoelec';
+$config['base_url']	= 'http://localhost/corposac';
 
 /*<
 |--------------------------------------------------------------------------
