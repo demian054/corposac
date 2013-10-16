@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<raiz>
+	<cat1 title = "Eventos" >
+		<item valor = "Realizado en Guanare II Encuentro Regional Servicio de Policía: Un reto para servir a nuestro pueblo" />
+		<item valor = "Comunicadores sociales participan en taller Mirada Periodística al Nuevo Modelo Policial Venezolano" />
+		<item valor = "Comunicadores de la región occidental dan una mirada al Nuevo Modelo Policial" />
+		<item valor = "Miembros de la FANB conocieron avances en la transformación del servicio policial venezolano" />
+	</cat1>
+	<cat2 title = "Postulaciones" >
+		<item valor = "Inicia proceso de postulaciones para integrar Comités Ciudadanos de Control Policial" />
+		<item valor = "Extendido plazo para postulaciones para Comité Ciudadanos de Control Policial" />
+	</cat2>
+	<cat3 title = "Normativas" >
+		<item valor = "Informan a policías sobre nuevas políticas públicas a través de boletín" />
+		<item valor = "Aprobadas normas sobre formación y entrenamiento continuos para policías" />	
+	</cat3>
+	<cat4 title = "Rendición de Cuentas" >
+		<item valor = "Policía municipal de Mara primera en rendir cuentas al pueblo zuliano" />
+		<item valor = "Policía de Tucupita rindió cuentas a la comunidad" />
+	</cat4>
+</raiz>

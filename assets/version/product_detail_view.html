@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="assets/version/css/version.css"/>
+<script type="text/javascript">
+    $(document).ready(function(){        
+        $.getJSON('assets/version/data/changelog.json', function(data){
+            var delProyecto = data[0];
+            $('#makername').html(delProyecto.makerName);
+            $('#projectauthors').html(delProyecto.projectAuthors);
+            $('#titulo').html(delProyecto.projectName);
+            $('#clientname').html(delProyecto.clientName);
+            $('#versionnumber').html(delProyecto.versionNumber);
+            $('#versiondate').html(mifecha(delProyecto.versionDate));
+        });        
+    });
+</script>
+</head>
+
+<body>
+
+<div id="masterd">
+	<div id="producto">
+		<img  src="assets/version/img/producto.png"/>
+		<div class="versiondata">
+			<span id="versionnumber" class="titulo_uno"></span> / 
+                        <span id="versiondate" class="titulo_uno"></span>
+		</div>
+		<div id="clientname"></div>
+	</div>
+	<div id="maker">
+		<span class="madeby">Creado por: </span><span id="makername"></span>
+		<img src="assets/version/img/rialfi.png"/>
+	</div>
+	<div id="autorescontent">
+		<span class="autores">Autores:</span>
+		<div id="projectauthors"></div>
+	</div>
+</div>
+
+</body>
+</html>

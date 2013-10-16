@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="assets/version/css/version.css"/>
+<script type="text/javascript">
+    $(document).ready(function(){        
+        $.getJSON('assets/version/data/changelog.json', function(data){
+                var deVersiones = data[1];
+                var html = "";
+                $.each(deVersiones, function(i,res) {
+                    
+                    html += "<div class='grupo'>";
+                    html += "<div id='version'>";
+                    html += "<span id='versionumber' class='titulo_dos'>Versión: "+ res.versionNumber +"</span>"; 
+//                    html += "<span id='versionname' class='titulo_dos'> "+ res.versionName +"</span>";
+                    html += "</div>";                    
+                    html += "<div id='fecha'>";
+                   
+                    html += "Del <span id='versionstart' class='titulo_uno'>"+ mifecha(res.versionStart) +"</span>";
+                    html += " al <span id='versionend' class='titulo_uno'>"+ mifecha(res.versionEnd) +"</span>";
+                    html += "</div>";
+                    
+                var x = 0;
+                var y = 0;
+                    
+                    $.each(res.details, function(i, deta) {      
+                        if(deta.type == 'mejora')
+                        {                            
+                            x++;
+                        } else {
+                            y++
+                        }
+                    });
+                    
+                    if(x > 0){    
+                        html += "<div id='mejorascontent' class='titulo_uno'>Mejoras";
+                        html += "<ul class='mejoras'>";
+
+                        $.each(res.details, function(i, deta) {
+                            if(deta.type == 'mejora')
+                            {                            
+                                html += "<li>&bull; " + deta.title + "</li>";
+                            }
+                        });
+                        html += "</ul>";
+                        html += "</div>";
+                    }
+                    
+                    if(y > 0){
+                        html += "<div id='bugfixescontent' class='titulo_uno'>Bug Fixes";
+                        html += "<ul class='bugfixes'>";
+                        $.each(res.details, function(i, deta) {
+                            if(deta.type == 'bugfix')
+                            {                            
+                                html += "<li>&bull; " + deta.title + "</li>";
+                            }
+                        });
+                        html += "</ul>";
+                        html += "</div>";
+                    }   
+                    html += "</div>";
+            });
+        $("#masterg").html(html);
+        });        
+    });
+    
+    
+</script>
+</head>
+
+<body>
+
+<div id="masterg">
+</div>
+
+</body>
+</html>

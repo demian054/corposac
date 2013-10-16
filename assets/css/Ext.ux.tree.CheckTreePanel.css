@@ -1,0 +1,71 @@
+.x-tree-checkbox {
+	background:url('../js/libraries/ExtJs/3.4/resources/images/default/form/checkbox.gif') no-repeat 0 0;
+	height:13px;
+	width:13px;
+	margin:0 1px;
+	vertical-align:middle;
+}
+.x-tree-checkbox-over .x-tree-checkbox {
+	background-position:-13px 0;
+}
+.x-tree-checkbox-down .x-tree-checkbox {
+	background-position:-26px 0;
+}
+.x-tree-node-disabled .x-tree-checkbox {
+	background-position:-39px 0;
+}
+.x-tree-node-checked {
+	background-position:0 -13px;
+}
+.x-tree-checkbox-over .x-tree-node-checked {
+	background-position:-13px -13px;
+}
+.x-tree-checkbox-down .x-tree-node-checked {
+	background-position:-26px -13px;
+}
+.x-tree-node-disabled .x-tree-node-checked {
+	background-position:-39px -13px;
+}
+.x-tree-node-grayed {
+	background-position:0 -26px;
+}
+.x-tree-checkbox-over .x-tree-node-grayed {
+	background-position:-13px -26px;
+}
+.x-tree-checkbox-down .x-tree-node-grayed {
+	background-position:-26px -26px;
+}
+.x-tree-node-disabled .x-tree-node-grayed {
+	background-position:-39px -26px;
+}
+
+#tree .x-tree-node-expanded .x-tree-node-icon {
+    background-image:none;
+}
+#tree .x-tree-node-collapsed .x-tree-node-icon {
+    background-image:none;
+}
+#tree .x-tree-node-leaf .x-tree-node-icon {
+    background-image:none;
+}
+#tree .x-tree-node-collapsed .x-tree-node-icon,
+#tree .x-tree-node-expanded .x-tree-node-icon,
+#tree .x-tree-node-leaf .x-tree-node-icon{
+    height:0;
+    width:0;
+}
+/*restaura los iconos en el TreeGrid para que no se vean estirados:*/
+.x-tree-node-icon,
+.defx-tree-node-icon {
+    height: 16px !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+.defx-tree-node-icon {
+    text-align: center !important;
+}
+img.hidden_icon {
+    height:0px !important;
+    width:0px !important;
+}
+/* eof */

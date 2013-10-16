@@ -1,0 +1,1 @@
+<? if(isset($error)){ echo $error; } else { echo ""; } ?>Ha ocurrido algun error al subir su archivo al servidor, verifique que ha podido pasar!<br><br><?php foreach($upload_data as $item => $value){?><?=$item;?>: <?=$value;?><br><?php } ?>

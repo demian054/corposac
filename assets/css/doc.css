@@ -1,0 +1,64 @@
+html,body{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+.doc_header{
+	width: 885px;
+	margin: 10px 0px 0px 35px;
+	padding: 15px 20px 15px 5px;
+	font-size: 25px;
+	color: #808080;
+	border-bottom: 2px solid gray;
+}
+.doc_content{
+	width: 900px;
+	margin: 10px 0px 0px 20px;
+	padding: 15px;
+	font-size: 13px;
+	line-height: 20px;
+}
+.doc_campos{
+	margin-left: 50px;
+	width: 800px;
+}
+.doc_navegacion{
+	width: 400px;
+	margin: 30px 0px 20px 0px;
+}
+.doc_table_title{
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 10px;
+	background-color: #c0c0c0;
+}
+.doc_table_content{
+	padding: 5px;
+	font-size: 12px;
+	line-height: 20px;
+	background-color: #f8f8ff;
+}
+.doc_screenshot{
+	font-size: 10px;
+	text-align: left;
+	line-height: 20px;
+	width: 900px;
+	padding: 10px 10px 10px 0px;
+	font-size: 13px;
+	line-height: 20px;
+	border-top: 1px solid gray;
+}
+.doc_campo_ayuda{
+	color: #808080;
+	font-style: italic;
+}
+.doc_ol{
+	margin: 30px;
+}
+.doc_span_link{
+	cursor:pointer;
+}
+.doc_span_link:hover{
+	color: #4169e1;
+	font-weight: bold;
+}

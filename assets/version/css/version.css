@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+}
+#masterg {
+	width:305px;
+	height:390px;
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	font-size:11px;
+	color:#666;
+}
+
+#masterd {
+	width:320px;
+/*	height:390px;*/
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	font-size:11px;
+	color:#666;
+}
+
+#producto {
+	padding:15px 0 5px 0;
+	border-bottom:1px solid #CCC;
+	margin:0 10px 10px 12px;
+}
+.versiondata {
+	text-align:left;
+}
+.titulo_uno {
+	font-weight:bold;
+    color:#999;
+}
+.titulo_dos {
+	font-weight:bold;
+    color:#666;
+}
+.subtitulo_uno {
+	font-weight:normal;
+	color:#999;
+}
+#versionnumber {
+    text-align:left;
+}
+#versiondate {}
+#clientname {
+	text-align:left;
+}
+#maker {
+    padding:0 0 5px 0;
+    margin:0 10px 10px 12px;
+    border-bottom:1px solid #CCC;
+    text-align:left;
+}
+.madeby {
+
+}
+#makername {
+    font-weight:bold;
+
+}
+
+#maker img {
+    padding-top:5px;
+    display:block;
+}
+#autorescontent {
+	text-align:left;
+	padding:0 0 5px 0;
+    margin:0 10px 10px 12px;
+    max-height:170px;
+    overflow:auto;
+}
+.autores {
+    font-weight:bold;
+    color:#999;
+}
+#projectauthors {}
+#version {
+	text-align:left;
+	margin:10px 10px 2px 12px;
+}
+#fecha {
+	text-align:left;
+	margin:0 10px 10px 12px;
+}
+#mejorascontent {
+	text-align:left;
+	font-weight:bold;
+	margin:0 10px 10px 12px;
+}
+#bugfixescontent {
+	text-align:left;
+	font-weight:bold;
+	margin:0 10px 10px 12px;
+}
+.mejoras {
+	padding:0;
+	font-weight:normal;
+	color:#333;
+	list-style-position:inside;
+}
+.bugfixes {
+	padding:0;
+	font-weight:normal;
+	color:#333;
+	list-style-position:inside;
+}
+.grupo {
+    border-bottom:1px solid #CCC;
+    margin:0 15px;
+    padding-bottom:5px;
+}
