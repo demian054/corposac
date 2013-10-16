@@ -1,0 +1,16 @@
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+nbproject/*
+log/log*
+*~
+*.swp
+*.csv
+reports/*
+!reports/index.html
+files/uploads/*
