@@ -305,12 +305,31 @@ body {
 }
 
 .our_status.ABIERTA {
-    background-color: #9ED39E;
+    background-image: none;
+    background-color: #88B4FC;
+}
+
+.our_status.INCOMPLETA {
+    background-image: none;
+    background-color: #B5BCFC;
 }
 .our_status.ASIGNADO {
-    background-color: #99bbe8;
+    background-image: none;
+    background-color: lightskyblue;
+}
+
+.our_status.ATENDIDO {
+    background-image: none;
+    background-color: #66CCCC;
 }
 
 .our_status.SOLUCIONADO {
-    background-color: #be9a3f;
+    background-image: none;
+    background-color: #9ED39E;
 }
+
+.our_status.ANULADO {
+    background-image: none;
+    background-color: #FFB294;
+}
+
